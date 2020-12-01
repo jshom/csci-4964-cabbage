@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    notebook:
+        image: tensorflow/tensorflow:nightly-jupyter
+        volumes:
+            - ./notebooks/:/tf/
+        ports:
+            - 8888:8888
