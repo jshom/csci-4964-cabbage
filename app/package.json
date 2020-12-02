@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/jshom/cabbage#readme",
   "dependencies": {
-    "electron": "^8.2.5",
     "electron-packager": "^15.1.0"
+  },
+  "devDependencies": {
+    "electron": "^11.0.3"
   }
 }
