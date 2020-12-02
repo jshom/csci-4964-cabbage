@@ -1,0 +1,28 @@
+@startuml
+
+package ElectronApp {
+
+    object AudioFromPodcast {
+        +AudioFile audio
+    }
+
+    object WatsonSpeechToText {
+        +speechToText(audio_file): String
+    }
+
+    object TextGenerationModel {
+        +train(text)
+        +generate_text(character_count)
+        +generate_text_by_time_length(time, wpm)
+    }
+
+    object WatsonTextToSpeech {
+        +textToSpeech(text): AudioFile
+    }
+
+    AudioFromPodcast -right-> WatsonSpeechToText: Feeds audio from podcast
+    WatsonSpeechToText --> TextGenerationModel: Feeds model training data
+    TextGenerationModel -> WatsonTextToSpeech: Generates audio from output
+}
+
+@enduml
