@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset = "UTF-8">
-      <title>Hello World!</title>
-   </head>
-   
-   <body>
-      <h1>Hello World!</h1>
-      We are using node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
-      <br>
-   </body>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Hello World!</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    </head>
+
+    <body class='container-fluid mt-1'>
+        <main>
+            <h1>Hello CABbAGE</h1>
+            <p>Start listening to AI generated sleep magic</p>
+            <form>
+                <label for="time_length">Seconds</label>
+                <input type="text" id="time_length" name="time_length" placeholder="120" required>
+                <button type="submit">Start Listening</button>
+            </form>
+        </main>
+    </body>
 </html>
