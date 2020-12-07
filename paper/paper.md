@@ -91,7 +91,6 @@ We would look to compare sleep performance of differnet models on different
 trainig data of the different types of noise.
 
 \newpage
-\newpage
 
 # References
 
