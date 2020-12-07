@@ -2,9 +2,13 @@
 
 Sam likes noise while he sleeps so he likes idea.
 
-# Generative Approaches
+# AI Text Generation Approaches
 
 We used Markov model and a LSTM approach for various auto generated noise.
+
+## Training Data
+
+We sourecd our traning data from ...
 
 ## Markov Model
 
@@ -14,7 +18,7 @@ The work and science behind this.
 
 The work and science behind this as well.
 
-# Other Cognitive Tecnhologies
+# Use of Cognitive Technologies
 
 We used IBM Watson technologeis that made it easy to convert text to speech and
 vise versa. This allowed us to traing the models easier by importing podcast
@@ -73,7 +77,20 @@ tote bag bushwick fixie truffaut authentic venmo jianbing.
 
 ![Image](./images/app-screenshot.jpg)
 
+## ElectronJS
 
+Nodjes approach, easy to pick up and implemnt. Cross device whatever. can expand here.
+
+# Problems not Solved
+
+add info about what we left out and corners we cut.
+
+# Future Work
+
+We would look to compare sleep performance of differnet models on different
+trainig data of the different types of noise.
+
+\newpage
 \newpage
 
 # References
