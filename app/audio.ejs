@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CABbAGE</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    </head>
+
+    <body class='container-fluid mt-1'>
+        <main>
+
+            <h1>CABbAGE</h1>
+
+            <p>Here is your audio file! Have a good night!</p>
+                
+            <i>
+                Type: <%= channel %>;
+                Length: <%= time %> seconds
+            </i><br>
+
+            <audio controls style='margin-top: 20px;'>
+                <source src="<%= audioURL %>" type="audio/flac">
+            </audio>
+
+        </main>
+    </body>
+</html>
