@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
 let mainWindow
@@ -22,6 +22,10 @@ const createWindow = () => {
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
 }
+
+ipcMain.on("form-submit", function(event, channel, time){
+    console.log(channel, time);
+});
 
 app.allowRendererProcessReuse = true
 
