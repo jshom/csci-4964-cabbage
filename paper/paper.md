@@ -88,6 +88,12 @@ correctness and randomization.
 
 ### Text Generation
 
+Text generation is done through taking a seed of tokens of length $l$, The same
+$l$ as used in training. Then, the model predicts the next word, shifts the
+sequence forward by a word, then uses that trailing seed that now has one predicted
+word. As this process continues, the model will then be predicting words based
+on other predicted words leading to text generation of any arbitrary length.
+
 # Use of Cognitive Technologies
 
 We used IBM Watson technologeis that made it easy to convert text to speech and
