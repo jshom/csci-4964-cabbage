@@ -12,14 +12,17 @@
             <h1>CABbAGE</h1>
 
             <p>Here is your audio file! Have a good night!</p>
-                
-            <i>
+
+            <pre>
                 Type: <%= channel %>;
                 Length: <%= time %> seconds
-            </i><br>
+            </pre>
 
-            <audio controls style='margin-top: 20px;'>
-                <source src="<%= audioURL %>" type="audio/flac">
+            </br>
+
+            <audio controls>
+                <source src='<%- audioURL %>' type='audio/flac'>
+                 Your browser does not support the audio element.
             </audio>
 
         </main>
