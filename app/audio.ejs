@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CABbAGE</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    </head>
+
+    <body class='container-fluid mt-1'>
+        <main>
+
+            <h1>CABbAGE</h1>
+
+            <p>Here is your audio file! Have a good night!</p>
+
+            <pre>
+                Type: <%= channel %>;
+                Length: <%= time %> seconds
+            </pre>
+
+            </br>
+
+            <audio controls>
+                <source src='<%- audioURL %>' type='audio/flac'>
+                 Your browser does not support the audio element.
+            </audio>
+
+        </main>
+    </body>
+</html>

@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/jshom/cabbage#readme",
   "dependencies": {
-    "electron-packager": "^15.1.0"
+    "ejs": "^3.1.5",
+    "electron-packager": "^15.1.0",
+    "python-shell": "^2.0.3"
   },
   "devDependencies": {
     "electron": "^11.0.3"

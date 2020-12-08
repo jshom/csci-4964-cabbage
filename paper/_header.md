@@ -14,10 +14,11 @@ author:
 - Sam Cohen
 - Sen Francis
 date: December 7th, 2020
-fontsize: 12pt
+fontsize: 10pt
 classoption:
 - twocolumn
 numbersections: true
+documentclass: article
 abstract: |
     The CABbAGE project aims to improve sleep though using a AI
     generated pink noise, variable frequency noise generated to promote better
