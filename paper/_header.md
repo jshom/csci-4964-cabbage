@@ -28,5 +28,4 @@ abstract: |
     pink noise. To generate the audio, CABbAGE uses a range of generative
     techniques like LSTM and Markov Models trained on a variety of seed data
     ranging from Science and Tech, Zen and Nature and Sports.
-bibliography: biblio.bib
 ---
