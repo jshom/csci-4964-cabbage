@@ -104,11 +104,37 @@ audio into the model as plain text after watson tranformation process finished.
 
 # Application
 
-The application was integral to providinga a usbale interface to the audio.
+The application was integral to providing a a useable interface to the audio.
+The first bit of consideration that went into this was deciding what frontend
+framework was going to be used by the group. We wanted a few things out of our
+framework: easy development, cross-platform compatibility, and support for different
+packages. We also had to consider if this was going to be a web application, or
+a desktop app. In the end, we went with ElectronJS as it fit all of our needs and
+allowed us to build a desktop app using web technologies. After deciding on our
+framework, we started designing the app.
 
-Something sometihing. maybe write a bit about electron
+For the majority of the app we valued simplicity above all else. We went with
+Pico CSS as a css framework, so we could spend minimal time working on styling
+while still getting a good looking UI. We decided that showing the minimal
+amount of choices to the user (selecting one of three "channels" and the amount
+of minutes to generate) would allow for the greatest clarity and ease of use.
+After submitting these values the application then serves you the audio where,
+once again, we chose simplicity by simply showing an audio player with the and
+nothing else.
 
-**FILL IN**
+In terms of how the app actually functions, we separated out most of the machine
+learning from the app, to speed up running times and to keep complexity low. In
+order to do this we pre-generated text from each of the three podcast styles and
+then select a random starting place from those to generate our audio. For the
+actual audio generation we spawn a python process that generates a .flac file
+using the Watson text-to-speech API, and serves that to the app to be listened
+too.
+
+Overall, in our application we valued simplicity. This allowed us to develop quickly
+given the time constraints of the project. The simple design also will allow for
+additions to be made in the future without having to wade through a lot of complex
+code. This design choice allowed us to more evenly spread our time to different
+parts of the project.
 
 ![Image of the ElectronJS App](./images/app-screenshot.jpg)
 
