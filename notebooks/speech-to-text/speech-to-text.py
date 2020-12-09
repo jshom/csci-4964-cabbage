@@ -10,7 +10,7 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 #assumes local_file_path is the the path of the audio to transcribe
 def speech_to_text(filename):
     #writing to new file, if one doesn't exist
-    f = open("sports.txt", 'a+')
+    f = open("nature-and-zen.txt", 'a+')
     #Should probably remove API Key bc sensitive information
     authenticator = IAMAuthenticator('KuyElaYRmMz5Sb4okniJfkAdryuTnjh_QtV0SfC5lwhG')
     service = SpeechToTextV1(authenticator = authenticator)
