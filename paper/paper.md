@@ -99,7 +99,7 @@ on other predicted words leading to text generation of any arbitrary length.
 IBM Watson technologies played an integral role in this product. The technologies we
 used were the Speech to Text and the Text to Speech resources. These resources made 
 training the models much easier. The Text to Speech service provides APIs that use
-IBM's speech-synthesis capibities that synthesize text into natural-sounding speech.
+IBM's speech-synthesis capabilities that synthesize text into natural-sounding speech.
 This feature was vital to our product because we wanted our audio to sound as natural
 as possible rather than the built-in services which sound robotic. The IBM Watson Speech 
 to Text service provides APIs that use IBM's speech-recognition capabilities to produce 
@@ -113,8 +113,6 @@ function. The synthesize function could be used for either Speech to Text or Tex
 The synthesize function for Speech to Text was used by importing podcast audio into the model
 as plain text. The synthesize function for Text to Speech was used to generate a flac or MP4 
 file given a text file. 
-
-**FILL IN***
 
 # Application
 
