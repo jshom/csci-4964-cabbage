@@ -98,10 +98,21 @@ on other predicted words leading to text generation of any arbitrary length.
 
 IBM Watson technologies played an integral role in this product. The technologies we
 used were the Speech to Text and the Text to Speech resources. These resources made 
-training the models much easier. The Text to Speech service provides API's that use
+training the models much easier. The Text to Speech service provides APIs that use
 IBM's speech-synthesis capibities that synthesize text into natural-sounding speech.
 This feature was vital to our product because we wanted our audio to sound as natural
-as possible and built-in services can sound robotic. .....
+as possible rather than the built-in services which sound robotic. The IBM Watson Speech 
+to Text service provides APIs that use IBM's speech-recognition capabilities to produce 
+transcripts of spoken audio. This service allowed us to even transcribe speech from various 
+languages and audio formats.
+
+In order to use the Text to Speech and Speech to Text services in python scripts, we had to 
+first install the IBMWatson package and then authenticate ourselves using the API key and URL. 
+Once the API connection was established, calls could then be made to either the synthesize function.
+The synthesize function could be used for either Speech to Text or Text to SPeech 
+
+
+
 
 We used IBM Watson technologeis that made it easy to convert text to speech and
 vise versa. This allowed us to traing the models easier by importing podcast
