@@ -20,7 +20,6 @@ const createWindow = () => {
     }
   })
   mainWindow.loadFile(path.join(__dirname, 'index.html'))
-  mainWindow.webContents.openDevTools()
 }
 
 /**
@@ -37,7 +36,7 @@ ipcMain.on('form-submit', (_, channel, time) => {
     path.join(__dirname, 'generated-text', `${channel}.txt`),
     'utf8'
   )
-  const initialPoint = Math.round(Math.abs(Math.random() * rawText.length))
+  const initialPoint = Math.round(Math.abs(Math.random() * rawText.length - textWidth))
   const text = rawText.slice(initialPoint, initialPoint + textWidth)
   console.log({text, textLength: text.length, time, initialPoint, channel})
 
