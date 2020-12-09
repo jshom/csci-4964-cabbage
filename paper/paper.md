@@ -25,13 +25,13 @@ with a LSTM Deep Learning approach.
 
 ## Training Data
 
-We sourecd our traning data from ...
-
-podcast and so on
-
-types of podcasts
-
-**FILL IN**
+All of our podcast training data was found on https://www.listennotes.com/. We sourced
+our training data from podcasts ESPN Daily and Wildlife Health Connections, and also
+various essays written by Paul Graham. Our intention was to have podcasts themes 
+for sports, nature, and science and technology, which we sourced them from the 
+previously mentioned podcasts, respectively. After we found the podcast training data,
+we simply inputed each podcast into the Watson speech to text interface and then a text
+file was generated containing the podcast transcript. 
 
 ## Markov Model
 
