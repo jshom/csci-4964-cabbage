@@ -256,4 +256,4 @@ technology.
 - http://xpo6.com/list-of-english-stop-words/
 - https://ashutoshtripathi.com/2020/04/06/guide-to-tokenization-lemmatization-stop-words-and-phrase-matching-using-spacy/
 - https://base64.guru/converter/encode/audio/flac
-
+- https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
