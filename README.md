@@ -40,7 +40,7 @@ See https://www.docker.com/ and https://docs.docker.com/compose/ for docs and in
 To start up run `make`, this will spin up a Jupyter notebook. All files will be
 saved to the `./notebooks` directory.
 
->Tensorflow, Keras and Numpy should all be pre-installed. The IBM Watson library should aso be installed.
+>Tensorflow, Keras and Numpy should is pre-installed. The IBM Watson library should aso be installed.
 >    Install library using: `pip install --upgrade "ibm-watson>=4.7.1"`
 >
 >_NOTE: using the nightly tf jupyer notebook image, hoping it doesn't cause any issues_
