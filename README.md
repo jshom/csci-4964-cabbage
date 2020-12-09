@@ -31,7 +31,7 @@ Use `make app` command to spin up the electron app, you will first need to enter
 
 ### Start Notebooks (for Training and Text Generation)
 
-Use `make notebook` command to spin up the ![Jupyer](https://jupyter.org/) notebook.
+Use `make notebook` command to spin up the [Jupyter](https://jupyter.org/) notebook.
 
 You will need to have `docker` and `docker-compose` installed.
 
