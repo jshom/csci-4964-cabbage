@@ -108,15 +108,11 @@ languages and audio formats.
 
 In order to use the Text to Speech and Speech to Text services in python scripts, we had to 
 first install the IBMWatson package and then authenticate ourselves using the API key and URL. 
-Once the API connection was established, calls could then be made to either the synthesize function.
-The synthesize function could be used for either Speech to Text or Text to SPeech 
-
-
-
-
-We used IBM Watson technologeis that made it easy to convert text to speech and
-vise versa. This allowed us to traing the models easier by importing podcast
-audio into the model as plain text after watson tranformation process finished.
+Once the API connection was established, calls could then be made to either the synthesize 
+function. The synthesize function could be used for either Speech to Text or Text to Speech.
+The synthesize function for Speech to Text was used by importing podcast audio into the model
+as plain text. The synthesize function for Text to Speech was used to generate a flac or MP4 
+file given a text file. 
 
 **FILL IN***
 
