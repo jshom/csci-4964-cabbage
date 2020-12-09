@@ -44,3 +44,12 @@ saved to the `./notebooks` directory.
 >    Install library using: `pip install --upgrade "ibm-watson>=4.7.1"`
 >
 >_NOTE: using the nightly tf jupyer notebook image, hoping it doesn't cause any issues_
+
+## Team
+
+- @EldritchCrow Sam Cohen
+- @GregPikitis Emelia Blankenship
+- @gizzon Nicole Gizzo
+- @IkeLyons Ike Lyons
+- @sen-francis Sen Francis
+- @jshom Jacob Shomstein
