@@ -96,6 +96,13 @@ on other predicted words leading to text generation of any arbitrary length.
 
 # Use of Cognitive Technologies
 
+IBM Watson technologies played an integral role in this product. The technologies we
+used were the Speech to Text and the Text to Speech resources. These resources made 
+training the models much easier. The Text to Speech service provides API's that use
+IBM's speech-synthesis capibities that synthesize text into natural-sounding speech.
+This feature was vital to our product because we wanted our audio to sound as natural
+as possible and built-in services can sound robotic. .....
+
 We used IBM Watson technologeis that made it easy to convert text to speech and
 vise versa. This allowed us to traing the models easier by importing podcast
 audio into the model as plain text after watson tranformation process finished.
