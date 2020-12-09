@@ -13,13 +13,13 @@
             <form onsubmit="submitForm(event)">
                 <label for="channels">Topic</label>
                 <select name="channels" id="channels">
-                    <option value="Sci">Science and Tech</option>
-                    <option value="Nature">Nature and Zen</option>
-                    <option value="Sports">Sports</option>
+                    <option value="science">Science and Tech</option>
+                    <option value="zen">Nature and Zen</option>
+                    <option value="sports">Sports</option>
                 </select>
                 <label for="time_length">Seconds</label>
                 <input type="text" id="time_length" name="time_length" placeholder="120" value="120" required>
-                <button type="submit" value="Submit">Start Listening</button>
+                <button type="submit" id="submit" value="Submit">Start Listening</button>
             </form>
             <script>
               // include the ipc module to communicate with main process.
@@ -30,6 +30,7 @@
                 let channel = document.getElementById("channels").value;
                 let time = document.getElementById("time_length").value;
                 ipcRenderer.send("form-submit", channel, time);
+                document.getElementById("submit").innerHTML = "Loading..."
               }
 
             </script>

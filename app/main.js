@@ -23,8 +23,23 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools()
 }
 
+/**
+ * Handle form submission from application
+ *
+ * @param {String} channel - "science" "zen" or "sports"
+ * @param {Number} time - integer num of seconds
+ */
 ipcMain.on('form-submit', (_, channel, time) => {
-  const text = 'thing to turn to voice'
+  // multiple by two cuz time in seconds, avg speach is 120 wpm, 2 wps.
+  // estimating avg word length + punctuation lenght around 10... itll do lol
+  const textWidth = Number(time) * 2 * 10
+  const rawText = fs.readFileSync(
+    path.join(__dirname, 'generated-text', `${channel}.txt`),
+    'utf8'
+  )
+  const initialPoint = Math.round(Math.abs(Math.random() * rawText.length))
+  const text = rawText.slice(initialPoint, initialPoint + textWidth)
+  console.log({text, textLength: text.length, time, initialPoint, channel})
 
   pyshell.PythonShell.run('textToSpeech.py', { args: [text] }, (err, _) => {
     if (err) throw err
