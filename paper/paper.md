@@ -1,15 +1,24 @@
 # Motivation
 
-Sam likes noise while he sleeps so he likes idea.
-
-**FILL IN**
+The ultimate motivation for this application came from a desire for better sleep
+and, by extension, a better way to fall asleep. The first step was to look at the
+different things people use to fall asleep. Two commonly used medias are audiobooks
+and podcasts. We noticed that though these are indeed very helpful for falling
+asleep, they weren't specifically designed for it. This niche that was missing
+is what CABbAGE was born from. We realized that there was no reason to risk
+losing your place in a podcast, if we could generate the podcast audio on the fly.
+This method would allow the user to select the "sound" of audio that they want to
+fall asleep to, without having to find an actual podcast episode to fit it.
+This application allows a user to gain the proven benefit of falling asleep to a
+white noise, without the downsides associated with using podcasts or audiobooks
+that aren't designed for sleep.
 
 # Speech Text Generative Approaches
 
 Given the lack of certainty around which model could produce text, and in turn
 speech, that would promote sleep the best. We opted to implement more than
 models that would perform text generation on our training set. This would show
-us the drawbacks and potential upsides of chosing one model over another.
+us the drawbacks and potential upsides of choosing one model over another.
 
 For the two types of models, we decided to use a Markov Model approach along
 with a LSTM Deep Learning approach.
@@ -97,22 +106,22 @@ on other predicted words leading to text generation of any arbitrary length.
 # Use of Cognitive Technologies
 
 IBM Watson technologies played an integral role in this product. The technologies we
-used were the Speech to Text and the Text to Speech resources. These resources made 
+used were the Speech to Text and the Text to Speech resources. These resources made
 training the models much easier. The Text to Speech service provides APIs that use
 IBM's speech-synthesis capabilities that synthesize text into natural-sounding speech.
 This feature was vital to our product because we wanted our audio to sound as natural
-as possible rather than the built-in services which sound robotic. The IBM Watson Speech 
-to Text service provides APIs that use IBM's speech-recognition capabilities to produce 
-transcripts of spoken audio. This service allowed us to even transcribe speech from various 
+as possible rather than the built-in services which sound robotic. The IBM Watson Speech
+to Text service provides APIs that use IBM's speech-recognition capabilities to produce
+transcripts of spoken audio. This service allowed us to even transcribe speech from various
 languages and audio formats.
 
-In order to use the Text to Speech and Speech to Text services in python scripts, we had to 
-first install the IBMWatson package and then authenticate ourselves using the API key and URL. 
-Once the API connection was established, calls could then be made to either the synthesize 
+In order to use the Text to Speech and Speech to Text services in python scripts, we had to
+first install the IBMWatson package and then authenticate ourselves using the API key and URL.
+Once the API connection was established, calls could then be made to either the synthesize
 function. The synthesize function could be used for either Speech to Text or Text to Speech.
 The synthesize function for Speech to Text was used by importing podcast audio into the model
-as plain text. The synthesize function for Text to Speech was used to generate a flac or MP4 
-file given a text file. 
+as plain text. The synthesize function for Text to Speech was used to generate a flac or MP4
+file given a text file.
 
 # Application
 
