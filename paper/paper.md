@@ -28,10 +28,11 @@ with a LSTM Deep Learning approach.
 All of our podcast training data was found on https://www.listennotes.com/. We sourced
 our training data from podcasts ESPN Daily and Wildlife Health Connections, and also
 various essays written by Paul Graham. Our intention was to have podcasts themes 
-for sports, nature, and science and technology, which we sourced them from the 
-previously mentioned podcasts, respectively. After we found the podcast training data,
-we simply inputed each podcast into the Watson speech to text interface and then a text
-file was generated containing the podcast transcript. 
+for sports, nature, and science and technology, which we sourced from the previously 
+mentioned materials, respectively. The essays were already in the desired format so all
+we has to do was copy them into one text file. For the podcast training data, we simply 
+input each podcast into the Watson speech to text interface and then a text file was 
+generated containing the podcast transcript. 
 
 ## Markov Model
 
